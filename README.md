@@ -1,1 +1,1 @@
-# introduction-to-mobile-development
+# intelligent-mobile-development
