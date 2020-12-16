@@ -7,7 +7,7 @@
 
 ### Week 3
 
-*Part 1- Interactive UI*
+*Part 1 - Interactive UI*
 ![**Part 1- Interactive UI**](/Images/Week-3/Part-1-Interactive-UI.png)
 
 *Part 2 - Layout Editor*
