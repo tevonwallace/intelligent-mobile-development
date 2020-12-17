@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DroidCafe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/droidDesert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Droid Desert"
+            android:textSize="24dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/donutImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/donut_circle" />
+
+        <ImageView
+            android:id="@+id/iceCreamImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/donutImage"
+            app:srcCompat="@drawable/icecream_circle" />
+
+        <ImageView
+            android:id="@+id/froyoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iceCreamImage"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@drawable/froyo_circle" />
+
+        <TextView
+            android:id="@+id/donutDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="90dp"
+            android:text="@string/donutDescription"
+            android:layout_toRightOf="@id/donutImage" />
+
+        <TextView
+            android:id="@+id/iceCreamDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="90dp"
+            android:layout_below="@id/donutDescription"
+            android:text="@string/iceCreamDescription"
+            android:layout_toRightOf="@id/iceCreamImage"/>
+
+        <TextView
+            android:id="@+id/froyoDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="90dp"
+            android:text="@string/froyoDescription"
+            android:layout_below="@id/iceCreamDescription"
+            android:layout_toRightOf="@id/froyoImage"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingShoppingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppingcart"
+            app:maxImageSize="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+             android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+</LinearLayout>

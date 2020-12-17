@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityThree">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/messageReceivedLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/messageReceived"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:layout_marginLeft="18dp"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/receivedMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageReceivedLabel"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:layout_marginLeft="28dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/messageTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:hint="@string/messageHint"
+            android:layout_toLeftOf="@id/sendButton"
+            android:layout_marginLeft="8dp"/>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="SEND"
+            android:textSize="18dp" />
+    </RelativeLayout>
+</LinearLayout>
